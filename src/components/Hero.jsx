@@ -1,4 +1,6 @@
 import heroImage from '../assets/IMG_4830.PNG'
+import React from 'react';
+import {SocialMedia} from './SocialMedia.jsx';
 
 export default function Hero () {
     return (
@@ -9,6 +11,8 @@ export default function Hero () {
             <div className="hero-content">
                 <h1>I'm Ben</h1>
                 <p>A passionate web developer learning through hands-on projects</p>
+                <SocialMedia />
+
             </div>
             
 
