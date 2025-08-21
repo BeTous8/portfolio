@@ -3,10 +3,11 @@
     /* Remove max-width and margin: 0 auto */
 }
 
+
 .landing-page {
   height: 100vh;
   display: grid;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: 1fr;
   grid-template-columns: 1fr;
 }
 
@@ -18,6 +19,9 @@
     padding: 1.5rem 4rem;;
     background-color: #282c34;
     color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 .header h2 {
@@ -82,7 +86,7 @@
 }
 
 .hero-content {
-    max-width: 600px;
+    max-width: 700px;
     flex: 1;
 }
 
@@ -100,6 +104,7 @@
     font-size: 1.5rem;
     color: #a0a0a0;
     margin-bottom: 2rem;
+    max-width: 500px;
 }
 
 .social-media ul {
@@ -113,7 +118,7 @@
 
 .social-media a {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -339,7 +344,7 @@
 }
 
 .contact-info {
-    min-height: 80vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -394,6 +399,15 @@
 
 .contact-info a:hover::after {
     width: 100%;
+}
+
+.contact, .contact-info {
+    animation: typeWriter .8s ease-in-out;
+}
+
+@keyframes typeWriter {
+    from { width: 0; }
+    to { width: 100%; }
 }
 
 
@@ -562,7 +576,11 @@
     }
 
     .social-media ul li a {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
+    }
+
+    .contact-info {
+        padding: 2rem 2rem;
     }
 
     .contact-content h2 {
@@ -574,19 +592,33 @@
     }
 
     
+
+    
 }
 
 footer {
     background-color: #282c34;
     color: white;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1rem .5rem;
+    
     height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+footer .social-media {
+
 }
 footer p {
     margin: 0;
     font-size: 0.9rem;
     color: #a0a0a0;
+    margin-bottom: 2rem;
+    
 }
 footer a {
     color: #61dafb;

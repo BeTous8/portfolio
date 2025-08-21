@@ -1,6 +1,6 @@
 export default function ContactInfo() {
     return (
-        <div className="contact-info">
+        <div id="contact" className="contact-info">
             <h2>Contact</h2>
             <p>
                 If you are looking to get ahold of me, you can send me an email at{' '}

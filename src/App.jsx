@@ -8,36 +8,24 @@ import Footer from './components/Footer.jsx';
 import './App.css'
 
 function App() {
-  const [showContactPage, setShowContactPage] = useState(false);
+  const [showContactInfo, setShowContactInfo] = useState(false);
   
   
 
   return (
     
     <div className='app'>
-      {!showContactPage ? (
-        <>
-          <div className='landing-page'>
-            <Header />
-            <Hero />
-          </div>
-          <ProjectSection />
-          <Contact handleContactClick={() => setShowContactPage(true)}/>
-          <Footer />
-        </>
-    
+      <div className='landing-page'>
+        <Header />
+        <Hero />
+      </div>
+      <ProjectSection />
+      {!showContactInfo ? (  
+        <Contact handleContactClick={() => setShowContactInfo(true)} />
       ) : (
-        <>
-        <div className='landing-page'>
-          <Header />
-          <ContactInfo />
-          <Footer />
-        </div>
-          
-        </>
-         
+        <ContactInfo />
       )}
-
+      <Footer />      
   </div> 
     
   )

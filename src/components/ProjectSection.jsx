@@ -40,7 +40,7 @@ export default function ProjectSection() {
 
     return (
         <>
-            <section className="project-section">
+            <section id="projects" className="project-section">
                 <h2>Projects</h2>
                 <div className="projects">
                     {projects.map((project) => (
