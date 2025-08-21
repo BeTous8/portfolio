@@ -4,7 +4,7 @@ import {SocialMedia} from './SocialMedia.jsx';
 
 export default function Hero () {
     return (
-        <div className="hero">
+        <div id='home' className="hero">
             <div className="hero-image">
                 <img src={heroImage} alt="Hero" />
             </div>
