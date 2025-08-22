@@ -20,7 +20,7 @@ function App() {
         <Header />
         <Hero />
       </div>
-      {/* <About /> */}
+      <About />
       <ProjectSection />
       {!showContactInfo ? (  
         <Contact handleContactClick={() => setShowContactInfo(true)} />
