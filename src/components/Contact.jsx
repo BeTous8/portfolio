@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function Contact({handleContactClick}) {
 
     return (
-        <section id="contact" className="contact">
+        <section id="contact" className="contact fade-in-element">
             <div className="contact-content">
                 <h2>Let's Get In Touch</h2>
                 <p>I'm actively seeking opportunities to build responsive, user-friendly web applications using React and modern JavaScript.</p>

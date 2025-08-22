@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 export default function About() {
     const [isDetailsVisible, setIsDetailsVisible] = useState(false);
     return (
-        <section id="about" className="about">
+        <section id="about" className="about fade-in-element">
             <div className="about-content">
                 <h2>About Me</h2>
                 

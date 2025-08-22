@@ -1,6 +1,6 @@
 export function ProjectCard({ project }) {
     return (
-        <div className="project-card">
+        <div className="project-card fade-in-element">
             <div className="project-image">
                 <img src={project.image} alt={project.title} />
             </div>

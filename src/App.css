@@ -764,3 +764,16 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+/* Hidden state for elements */
+.fade-in-element {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Visible state when in view */
+.fade-in-element.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
