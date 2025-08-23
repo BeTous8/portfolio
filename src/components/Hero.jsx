@@ -11,6 +11,7 @@ export default function Hero () {
             <div className="hero-content">
                 <h1>I'm Ben</h1>
                 <p>A passionate web developer learning through hands-on projects</p>
+                <a href="#contact" className="hire-me-btn">Hire Me</a>
                 <SocialMedia />
 
             </div>

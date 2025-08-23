@@ -1,5 +1,6 @@
 export default function ContactInfo() {
     return (
+        <div className="contact-info-section">
         <div id="contact" className="contact-info">
             <h2>Contact</h2>
             <p>
@@ -13,5 +14,15 @@ export default function ContactInfo() {
                 </a>
             </p>
         </div>
+        <a 
+            href="/resume.pdf" 
+            download="Benjamin_Tousifar_Resume.pdf"
+            className="download-cv-btn"
+        >
+            📄 Download CV
+        </a>
+        </div>
+        
+        
     )
 }
