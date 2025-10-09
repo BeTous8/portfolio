@@ -246,7 +246,7 @@
 }
 
 .about-details.expanded {
-    max-height: 600px; /* Adjust based on content */
+    max-height: 800px;
     opacity: 1;
 }
 
