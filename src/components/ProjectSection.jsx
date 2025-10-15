@@ -4,30 +4,40 @@ import {ProjectCard} from "./ProjectCard.jsx";
 export default function ProjectSection() {
     const projects = [
         {
-            id : 1,
+            id: 1,
+            title: "ModernShop - E-Commerce App",
+            image: "/images/shopping-cart.png",
+            alt: "ModernShop E-Commerce Application",
+            description: "A modern, responsive e-commerce web application that enables users to browse products, manage shopping cart items, and view order summaries. Features include real-time cart updates, quantity controls, persistent state management via Context API, and seamless navigation with React Router.",
+            technologies: ["React", "React Router", "Context API", "CSS Modules", "Vite", "FakeStore API"],
+            githubUrl: "https://github.com/BeTous8/shopping-cart.git",
+            liveUrl: "https://modernshop-react-demo.netlify.app"
+        },
+        {
+            id : 2,
             title: "Personal Library App",
             image : "/images/LibraryApp.png",
-            alt: "Project One Image",
+            alt: "Project Two Image",
             description: "A digital library application that allows users to add, remove, and track their personal book collection. Features include marking books as read/unread and persistent data storage.",
             technologies: ["HTML", "CSS", "JavaScript", "Local Storage"],
             githubUrl: "https://github.com/BeTous8/Library.git",
             liveUrl: "https://betous8.github.io/Library/"
         },
         {
-            id : 2,
+            id : 3,
             title: "Weather App",
             image : "/images/WeatherApp.png",
-            alt: "Project Two Image",
+            alt: "Project Three Image",
             description: "A sleek, responsive weather application built with vanilla JavaScript that fetches real-time weather data from OpenWeatherMap API. Users can search for current conditions in any city worldwide.",
             technologies: ["HTML", "CSS", "JavaScript", "OpenWeatherMap API"],
             githubUrl: "https://github.com/BeTous8/Weather-App.git",
             liveUrl: "https://betous8.github.io/Weather-App/"
         },
         {   
-            id : 3,
+            id : 4,
             title: "Memory Card Game",
             image : "/images/MemoryCardGame.png",
-            alt: "Project Three Image",
+            alt: "Project Four Image",
             description: "A React-based memory game featuring random Pokemon cards fetched from an API. Test your memory by clicking on cards without repeating any!",
             technologies: ["React", "CSS", "JavaScript", "Vite"],
             githubUrl: "https://github.com/BeTous8/Memory-Card.git",
