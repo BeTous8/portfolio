@@ -5,6 +5,16 @@ export default function ProjectSection() {
     const projects = [
         {
             id: 1,
+            title: "Memora - Gift Registry Platform",
+            image: "/images/gift-registry.png",
+            alt: "Memora Gift Registry Application",
+            description: "A collaborative gift registry platform that allows users to create wish lists, share them with friends and family, and enable group contributions to gift items. Features include multi-method authentication (Google OAuth, Email/Password, Phone OTP), real-time progress tracking, secure Stripe payment processing, and shareable event links.",
+            technologies: ["Next.js", "React", "Supabase", "Stripe", "Tailwind CSS", "PostgreSQL"],
+            githubUrl: "https://github.com/BeTous8/gift-registry.git",
+            liveUrl: "https://memoraapp.netlify.app/"
+        },
+        {
+            id: 2,
             title: "ModernShop - E-Commerce App",
             image: "/images/shopping-cart.png",
             alt: "ModernShop E-Commerce Application",
@@ -14,7 +24,7 @@ export default function ProjectSection() {
             liveUrl: "https://modernshop-react-demo.netlify.app"
         },
         {
-            id : 2,
+            id : 3,
             title: "Personal Library App",
             image : "/images/LibraryApp.png",
             alt: "Project Two Image",
@@ -24,7 +34,7 @@ export default function ProjectSection() {
             liveUrl: "https://betous8.github.io/Library/"
         },
         {
-            id : 3,
+            id : 4,
             title: "Weather App",
             image : "/images/WeatherApp.png",
             alt: "Project Three Image",
@@ -33,8 +43,8 @@ export default function ProjectSection() {
             githubUrl: "https://github.com/BeTous8/Weather-App.git",
             liveUrl: "https://betous8.github.io/Weather-App/"
         },
-        {   
-            id : 4,
+        {
+            id : 5,
             title: "Memory Card Game",
             image : "/images/MemoryCardGame.png",
             alt: "Project Four Image",

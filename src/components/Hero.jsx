@@ -1,4 +1,4 @@
-import heroImage from '../assets/IMG_4830.PNG'
+import heroImage from '../assets/my new photo.png'
 import React from 'react';
 import {SocialMedia} from './SocialMedia.jsx';
 
@@ -9,9 +9,11 @@ export default function Hero () {
                 <img src={heroImage} alt="Hero" />
             </div>
             <div className="hero-content">
-                <h1>I'm Ben</h1>
-                <p>A passionate web developer learning through hands-on projects</p>
-                <a href="#contact" className="hire-me-btn">Hire Me</a>
+                <p className="hero-greeting">Hi, my name is</p>
+                <h1>Ben</h1>
+                <h2 className="hero-subtitle">I build things for the web.</h2>
+                <p className="hero-description">I'm a web developer specializing in building exceptional digital experiences. Currently focused on creating responsive, user-friendly applications with modern technologies like React and JavaScript.</p>
+                <a href="#contact" className="hire-me-btn">Get In Touch</a>
                 <SocialMedia />
 
             </div>

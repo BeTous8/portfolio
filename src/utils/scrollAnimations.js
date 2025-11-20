@@ -7,8 +7,8 @@ export function initScrollAnimations() {
         });
     }, { threshold: 0.1 });
 
-    // Observe all elements with fade-in-element class
-    document.querySelectorAll('.fade-in-element').forEach(el => {
+    // Observe all elements with animation classes
+    document.querySelectorAll('.fade-in-element, .fade-in-top, .fade-in-bottom').forEach(el => {
         observer.observe(el);
     });
 }
