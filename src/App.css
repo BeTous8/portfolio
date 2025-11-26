@@ -58,76 +58,100 @@
     color: #14B8A6;
 }
 
+/* =========================================
+   UPDATED HERO STYLES (Modern Box Layout)
+   ========================================= */
+
 .hero {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 4rem;
-    background-color: #282c34;
-    color: white;
-    gap: 1rem;
+    min-height: 100vh;
+    padding: 8rem 4rem 4rem 4rem; /* Top padding to clear fixed header */
+    gap: 8rem; /* Space between image and text */
+    flex-wrap: wrap; /* Allows wrap for mobile */
 }
 
+/* ----------------- Image Container (Outline Box Effect) ----------------- */
 .hero-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    
+    position: relative;
+    width: 300px; /* Size of the image container */
+    height: 300px;
+    /* This allows the image to sit above the accent box */
+    z-index: 2; 
 }
 
 .hero-image img {
-    width: 350px;
-    height: 350px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    object-position: center 30%;
-    border-radius: 50%;
-    border: 4px solid #14B8A6;
-    transition: transform 0.3s ease, border-color 0.3s ease;
+    border-radius: 8px; /* Slightly rounded corners */
+    filter: grayscale(100%) contrast(1) brightness(0.9) drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4));
+    transition: all 0.3s ease;
+    border: 3px solid #14B8A6; /* A subtle border in your accent color */
 }
 
+/* Hover effect: colorize on hover */
 .hero-image img:hover {
-    transform: scale(1.05);
-    border-color: #F97316;
+    filter: none; /* Removes grayscale on hover */
+    transform: translate(-50px, -50px); /* Moves it slightly to align with the accent box */
 }
 
+/* The Accent Box (The "Outline Box" Effect) */
+.hero-image::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #14B8A6; /* Use your accent color */
+    border-radius: 8px;
+    position: absolute;
+    top: 25px; /* Offset the box down */
+    left: 25px; /* Offset the box right */
+    z-index: 1; /* Sits behind the image */
+    transition: all 0.3s ease;
+}
+
+/* If the image moves on hover, the accent box moves back */
+.hero-image:hover::after {
+    top: 100px;
+    left: 100px;
+}
+
+
+/* ----------------- Text Content ----------------- */
 .hero-content {
-    max-width: 700px;
-    flex: 1;
+    max-width: 500px;
 }
 
 .hero-greeting {
-    font-size: 1.1rem;
-    color: #14B8A6;
-    font-weight: 500;
-    margin-bottom: 1rem;
     font-family: 'Courier New', monospace;
+    color: #14B8A6; 
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
 }
 
 .hero-content h1 {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
+    margin-top: 0;
     margin-bottom: 0.5rem;
-    line-height: 1.1;
-    font-weight: 700;
-    color: #fff;
+    color: #282c34;
 }
 
 .hero-subtitle {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #a0a0a0;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    line-height: 1.1;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
 }
 
 .hero-description {
-    font-size: 1.1rem;
     color: #94a3b8;
+    line-height: 1.6;
     margin-bottom: 2rem;
-    max-width: 540px;
-    line-height: 1.7;
 }
+
+
 
 .hire-me-btn {
     background: transparent;
@@ -160,7 +184,7 @@
 }
 
 .social-media a {
-    color: white;
+    color: rgba(0, 0, 0, 0.2);
     font-size: 1.8rem;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -608,12 +632,30 @@
         gap: 1rem;
         
     }
+
     .hero {
         flex-direction: column;
-        padding: 2rem;
         text-align: center;
-        margin-top: 4rem;
+        gap: 3rem;
+        padding: 6rem 1rem 4rem 1rem;
     }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-image {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .hero-image::after {
+        top: 10px; 
+        left: 10px;
+    }
+    
     .hero-image img {
         width: 250px;
         height: 250px;
